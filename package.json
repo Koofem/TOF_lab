@@ -1,0 +1,20 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "link-module-alias",
+    "ci": "npm ci",
+    "start": "npm run postinstall && nodemon index.js"
+  },
+  "_moduleAliases": {
+    "Helpers": "./Helpers"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "link-module-alias": "^1.2.0",
+    "nodemon": "^2.0.15"
+  }
+}
